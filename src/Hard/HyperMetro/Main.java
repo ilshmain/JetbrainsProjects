@@ -16,6 +16,10 @@ public class Main {
     }
 
     public static void main(String[] args) throws Exception {
+        if (args.length == 0) {
+            System.out.println("Missing file path");
+            return;
+        }
         String[] mas;
         ArrayList<LinesMetro> lines = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
